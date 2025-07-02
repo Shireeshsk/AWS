@@ -1,0 +1,19 @@
+N Virginia
+
+creating lambda 
+  1. add permission to lambda ( AWS lambda execution role)
+  2. paste function 
+  3. deploy and test 
+  
+
+creating LexBot
+  1.create bot ( traditional)
+  2.use new IAM role
+  3.rest all default 
+  4. intent name GetGoldRate
+  5. add utterances
+  6.fulfillment active 
+  7. aliases -> test bot alias -> languages -> lambda function
+  8. intents -> build
+  9. test
+  

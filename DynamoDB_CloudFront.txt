@@ -1,0 +1,12 @@
+creating IAM role
+    dynamodbfull
+    basic lambda executin role
+
+creating lambda 
+    choose created role 
+    choose node js 18 
+    deploy the code 
+    change table name and attributes as expected 
+    
+
+

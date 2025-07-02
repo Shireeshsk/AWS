@@ -1,0 +1,33 @@
+create SNS 
+    1. create sns topic 
+    2. keep everything default 
+    3. use FIFO
+
+create SQS 
+    1. create sqs queue 
+    2. keep everything default
+    3. use Standard
+
+create lambda
+    1. create IAM role first with SNS full access 
+        and SQS full access and bassic lambda execution role
+    2. goto to lambda 
+    3. author from scratch python 3.9
+    4. change execution role
+    5. deply lambda function enusre change ARN and links of SNS and SQS
+    6. add trigger SNS 
+
+
+
+test message:
+
+{
+  "customer": "Alice Johnson",
+  "timestamp": "2025-07-02T09:45:30.123Z",
+  "items": [
+    { "name": "Veg Sandwich", "quantity": 2 },
+    { "name": "Orange Juice", "quantity": 1 },
+    { "name": "Coffee", "quantity": 1 }
+  ],
+  "totalCost": 12.50
+}

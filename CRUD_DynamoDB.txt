@@ -1,0 +1,11 @@
+insert 
+
+aws dynamodb put-item \
+  --table-name practice \
+  --item '{
+    "rollno": {"N": "2"},
+    "name": {"S": "ajay"},
+    "rating": {"N": "4"},
+    "subject": {"S": "science"}
+  }'
+

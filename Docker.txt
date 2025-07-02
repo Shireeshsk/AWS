@@ -1,0 +1,16 @@
+1. create ec2 instance default settings (new key pair needed)
+2. connect to it 
+3. sudo apt update
+4. sudo apt install nodejs npm 
+5. sudo apt install git -y
+
+6. curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+7. git clone https://github.com/parjan935/Docker_CC.git
+
+8. cd Docker_CC
+9. sudo docker build .
+10. go to security tab inbound rules edit custom TCP 3000 PORT 0.0.0.0/0 
+11. sudo docker images
+12. sudo docker run -d -p 3000:3000 imageid
