@@ -1,0 +1,9 @@
+        S3 versioning
+1. create a s3 bucket give a name 
+2. bucket ownsership ACLs enabled 
+3. do not block public access 
+4. bucket versioning enabled 
+5. create bucket 
+6. upload 3 images with same file name 
+7. go to permissions tab click on bucket policy click on edit generate policy 
+8. click on object name navigate to versions tab you can acces all the versions of the object 
