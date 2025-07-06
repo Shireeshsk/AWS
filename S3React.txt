@@ -1,0 +1,37 @@
+        CREATING REACT APP 
+    1. npx create-react-app my-app 
+    2. write simple code in App.js 
+    3. code : S3react.js 
+
+        import { useState } from "react";
+        export default function App(){
+            const [name,setName] = useState("");
+            return(
+                <div>
+                <input type="text" value={name} onChange={(e)=>setName(e.target.value)} placeholder="Enter name"/>
+                <h1>Hello {name} welcome to s3 bucket</h1>
+                </div>
+            )
+        }
+    4. npm start check once
+    5. npm run build
+
+
+        CREATING S3 BUCKET
+    1. create a simple s3 bucket 
+    2. with block all public access disabled and enable the bucket versioning
+    3. click on create bucket
+    4. click on properties scroll to bottom you will find s3 static website hosting 
+    5. click on permisson click on bucket policy and edit and click on generate policy 
+    6.  policy type : s3 bucket policy 
+        effect : allow
+        principle : *
+        actions : getobject
+        arn : copy your arn 
+        click on add statement 
+        when the policy is generated click in the policy update the arn to arn/* 
+        copy the policy and paste in the policy editor
+    7. the bucket url is in the properties - > s3 static website hosting 
+
+
+       
