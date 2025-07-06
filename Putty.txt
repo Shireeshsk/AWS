@@ -1,0 +1,11 @@
+1. create an EC2 instance with default settings and a new key pair download the key pair 
+2. open Puttygen import the key pair and click on save private key 
+3. open putty in the hostname add the ip address present in the SSH connection settings 
+4. connection -> data 
+        add hostname "ubuntu"
+5. connection -> SSH -> Auth -> credentials 
+        import private key generated in previous step 
+6. nano shireesh.java write program click ctrl + s and ctrl + x 
+7. install java 
+    sudo apt update 
+    sudo apt install default-jdk
