@@ -21,9 +21,10 @@
     1. create a simple s3 bucket 
     2. with block all public access disabled and enable the bucket versioning
     3. click on create bucket
-    4. click on properties scroll to bottom you will find s3 static website hosting 
-    5. click on permisson click on bucket policy and edit and click on generate policy 
-    6.  policy type : s3 bucket policy 
+    4. upload the content of the build folder files as add files and folder as add folders
+    5. click on properties scroll to bottom you will find s3 static website hosting 
+    6. click on permisson click on bucket policy and edit and click on generate policy 
+    7.  policy type : s3 bucket policy 
         effect : allow
         principle : *
         actions : getobject
@@ -31,7 +32,7 @@
         click on add statement 
         when the policy is generated click in the policy update the arn to arn/* 
         copy the policy and paste in the policy editor
-    7. the bucket url is in the properties - > s3 static website hosting 
+    8. the bucket url is in the properties - > s3 static website hosting 
 
 
        
