@@ -1,0 +1,20 @@
+sudo spt update 
+sudo su -
+df -h
+
+1. create volume general purpose 10gib
+2. rest all default 
+3. create volume
+4. click on actions attach volume select you ec2 instance
+5. choose device name as /dev/sdk
+6. lsblk list the attached volume (nvme1n1)
+7. sudo mkfs -t ext4 /dev/nvme1n1  (format the mounted volume)
+8. sudo mkdir /mnt/data (create directory)
+9. sudo mount /dev/nvme1n1 /mnt/data (mounting)
+10. df -h (verify mount)
+11. cd /mnt/data
+12. touch shireesh.txt
+13. echo "Hello, EBS volume!" > shireesh.txt
+14. create a snapshot of that volume 
+15. click snapshot select on actions click on copy snapshot give the destination region
+16. repeat the same process in that region 

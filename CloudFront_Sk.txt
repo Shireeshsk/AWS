@@ -1,0 +1,31 @@
+        Creating a Dynamo DB table
+1. create a tbale with partition key as Rollno
+2. rollno name rating subject
+
+        creating a lambda function 
+1. create a IAM role with basiclambdaexecutionrole and AmazonDynamoDBFullAccess
+2. attach that role when you create the create the lambda function 
+3. runtime nodejs 18 or later 
+4. add the code present in table.js
+5. click on deploy
+
+        creating API gateway 
+1. build HTTP API
+2. add Integration click on the the lambda function you have created 
+3. method POST
+4. stage name "prod"
+5. create
+6. CORS settings 
+        Access-Control-Allow-Origin: *
+        Access-Control-Allow-Methods: POST
+        Access-Control-Allow-Headers: content-type
+7. get the API url from stages section 
+8. while pasting the url in the react app add 'route name ' at the last 
+
+        creating s3 bucket 
+1. host on S3 bucket
+
+        creating Cloudfront distribution
+1. create distribution
+2. change the bucket policy 
+3. access it using domain

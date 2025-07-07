@@ -5,9 +5,10 @@
 5. sudo apt install git -y
 
 6. curl -fsSL https://get.docker.com -o get-docker.sh
+
 sudo sh get-docker.sh
 
-7. git clone https://github.com/parjan935/Docker_CC.git
+7. git clone https://github.com/Shireeshsk/Docker.git
 
 8. cd Docker_CC
 9. sudo docker build .
