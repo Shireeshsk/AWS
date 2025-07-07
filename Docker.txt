@@ -12,6 +12,6 @@ sudo sh get-docker.sh
 
 8. cd Docker_CC
 9. sudo docker build .
-10. go to security tab inbound rules edit custom TCP 3000 PORT 0.0.0.0/0 
+10. go to security tab inbound rules -> securtiy group  edit custom TCP 3000 PORT 0.0.0.0/0 
 11. sudo docker images
 12. sudo docker run -d -p 3000:3000 imageid
